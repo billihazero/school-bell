@@ -5,9 +5,10 @@ import { AllExceptionFilter } from '@common/interceptors/exception.filter';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TestModule } from 'test/test.module';
+import { AppLoggerModule } from '@logger/logger.module';
 
 @Module({
-  imports: [TestModule],
+  imports: [AppLoggerModule, TestModule],
   controllers: [AppController],
   providers: [
     { provide: APP_INTERCEPTOR, useClass: ResponseInterceptor },

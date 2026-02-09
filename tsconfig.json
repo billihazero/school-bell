@@ -3,6 +3,7 @@
     "baseUrl": "./src/",
     "paths": {
       "@common/*": ["common/*"],
+      "@logger/*": ["logger/*"],
       "@modules/*": ["modules/*"],
       "@config/*": ["config/*"]
     },
